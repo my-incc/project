@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/articulos/activos-pasivos-patrimonio-neto/</loc>
+    <loc>http://localhost:1313/my-incc/articulos/activos-pasivos-patrimonio-neto/</loc>
     <lastmod>2025-04-20T14:58:40+02:00</lastmod>
   </url><url>
-    <loc>/articulos/</loc>
+    <loc>http://localhost:1313/my-incc/articulos/</loc>
     <lastmod>2025-04-20T14:58:40+02:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>http://localhost:1313/my-incc/</loc>
     <lastmod>2025-04-20T14:58:40+02:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>http://localhost:1313/my-incc/categories/</loc>
     <lastmod>2025-04-19T21:16:29+02:00</lastmod>
   </url><url>
-    <loc>/categories/expansi%C3%B3n-de-negocios/</loc>
+    <loc>http://localhost:1313/my-incc/categories/expansi%C3%B3n-de-negocios/</loc>
     <lastmod>2025-04-19T21:16:29+02:00</lastmod>
   </url><url>
-    <loc>/tags/expansi%C3%B3n-de-negocios/</loc>
+    <loc>http://localhost:1313/my-incc/tags/expansi%C3%B3n-de-negocios/</loc>
     <lastmod>2025-04-19T21:16:29+02:00</lastmod>
   </url><url>
-    <loc>/articulos/qu%C3%A9-es-un-balance-definici%C3%B3n-ejemplo-completo/</loc>
+    <loc>http://localhost:1313/my-incc/articulos/qu%C3%A9-es-un-balance-definici%C3%B3n-ejemplo-completo/</loc>
     <lastmod>2025-04-19T21:16:29+02:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>http://localhost:1313/my-incc/tags/</loc>
     <lastmod>2025-04-19T21:16:29+02:00</lastmod>
   </url><url>
-    <loc>/categories/bancos/</loc>
+    <loc>http://localhost:1313/my-incc/categories/bancos/</loc>
     <lastmod>2025-03-31T21:15:27+02:00</lastmod>
   </url><url>
-    <loc>/tags/bancos/</loc>
+    <loc>http://localhost:1313/my-incc/tags/bancos/</loc>
     <lastmod>2025-03-31T21:15:27+02:00</lastmod>
   </url><url>
-    <loc>/articulos/qu%C3%A9-es-una-sucursal/</loc>
+    <loc>http://localhost:1313/my-incc/articulos/qu%C3%A9-es-una-sucursal/</loc>
     <lastmod>2025-03-31T21:15:27+02:00</lastmod>
   </url>
 </urlset>

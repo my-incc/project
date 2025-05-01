@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>incresium</title>
-    <link>/</link>
+    <link>http://localhost:1313/my-incc/</link>
     <description>Recent content on incresium</description>
     <generator>Hugo</generator>
     <language>es-ES</language>
     <lastBuildDate>Sun, 20 Apr 2025 14:58:40 +0200</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/my-incc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Activo, Pasivo y Patrimonio Neto con ejemplos</title>
-      <link>/articulos/activos-pasivos-patrimonio-neto/</link>
+      <link>http://localhost:1313/my-incc/articulos/activos-pasivos-patrimonio-neto/</link>
       <pubDate>Sun, 20 Apr 2025 14:58:40 +0200</pubDate>
-      <guid>/articulos/activos-pasivos-patrimonio-neto/</guid>
+      <guid>http://localhost:1313/my-incc/articulos/activos-pasivos-patrimonio-neto/</guid>
       <description>&lt;h2 id=&#34;activo&#34;&gt;Activo&lt;/h2&gt;&#xA;&lt;h3 id=&#34;definición-de-activo&#34;&gt;Definición de activo&lt;/h3&gt;&#xA;&lt;p&gt;Un activo es un recurso que se ha obtenido como consecuencia de sucesos del pasado y del que se espera obtener una rentabilidad en el futuro. Intuitivamente, un activo es todo aquello que aporta un valor al la empresa, algo que varias personas (no solo el propietario) consideran que tiene un precio. Por eso el nombre de &amp;ldquo;activo&amp;rdquo;, como algo que actualmente aporta riqueza.&lt;/p&gt;&#xA;&lt;p&gt;Más concretamente, un activo puede ser un:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Qué Es Un Balance Definición Ejemplo Completo</title>
-      <link>/articulos/qu%C3%A9-es-un-balance-definici%C3%B3n-ejemplo-completo/</link>
+      <link>http://localhost:1313/my-incc/articulos/qu%C3%A9-es-un-balance-definici%C3%B3n-ejemplo-completo/</link>
       <pubDate>Sat, 19 Apr 2025 21:16:29 +0200</pubDate>
-      <guid>/articulos/qu%C3%A9-es-un-balance-definici%C3%B3n-ejemplo-completo/</guid>
+      <guid>http://localhost:1313/my-incc/articulos/qu%C3%A9-es-un-balance-definici%C3%B3n-ejemplo-completo/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;Para prevenidos no hay acasos&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;Baltasar Gracián&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;definición&#34;&gt;Definición&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Un balance es una fotografía de la situación de una empresa&lt;/strong&gt;. Busca dar una percepción realista de cómo se encuentra la empresa al día de su realización.&lt;/p&gt;&#xA;&lt;p&gt;La fecha del balance es de suma relevancia, pues este informe &lt;strong&gt;refleja las circunstancias de la entidad justo en ese momento y no en otro&lt;/strong&gt;. Entonces, un balance positivo de fechas pasadas nos puede dar una idea de la evolución de la empresa y una intuición de lo que va a pasar con ella. Pero no asegura por completo que la sociedad en el momento actual tenga esas características. Por ejemplo, una pasteler�a podr�a tener unos balances muy buenos en navidad, una fecha donde muchos pasteles se venden, pero ser un negocio poco rentable el resto del a�o.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Qué Es Una Sucursal y cuáles son sus ventajas e inconvenientes?</title>
-      <link>/articulos/qu%C3%A9-es-una-sucursal/</link>
+      <link>http://localhost:1313/my-incc/articulos/qu%C3%A9-es-una-sucursal/</link>
       <pubDate>Mon, 31 Mar 2025 21:15:27 +0200</pubDate>
-      <guid>/articulos/qu%C3%A9-es-una-sucursal/</guid>
+      <guid>http://localhost:1313/my-incc/articulos/qu%C3%A9-es-una-sucursal/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;Divide y vencerás.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Julio C�sar (100 a.C.- 44 a.C.)&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Todo lo grande comienza siendo algo pequeño. Apple, una empresa que hasta en el rinc�n m�s pequeño de este mundo hace sonar su nombre, comenz� siendo un hobbie de dos amigos en un garaje.&lt;/p&gt;&#xA;&lt;p&gt;As�, cabe preguntarse por las diferentes estrategias que existen para ampliar el eco de una empresa en el �mbito nacional o internacional y cu�l es m�s conveniente para cada tipo de negocio.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bancos on incresium</title>
-    <link>/categories/bancos/</link>
+    <link>http://localhost:1313/my-incc/categories/bancos/</link>
     <description>Recent content in Bancos on incresium</description>
     <generator>Hugo</generator>
     <language>es-ES</language>
     <lastBuildDate>Mon, 31 Mar 2025 21:15:27 +0200</lastBuildDate>
-    <atom:link href="/categories/bancos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/my-incc/categories/bancos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Qué Es Una Sucursal y cuáles son sus ventajas e inconvenientes?</title>
-      <link>/articulos/qu%C3%A9-es-una-sucursal/</link>
+      <link>http://localhost:1313/my-incc/articulos/qu%C3%A9-es-una-sucursal/</link>
       <pubDate>Mon, 31 Mar 2025 21:15:27 +0200</pubDate>
-      <guid>/articulos/qu%C3%A9-es-una-sucursal/</guid>
+      <guid>http://localhost:1313/my-incc/articulos/qu%C3%A9-es-una-sucursal/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;Divide y vencerás.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Julio C�sar (100 a.C.- 44 a.C.)&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Todo lo grande comienza siendo algo pequeño. Apple, una empresa que hasta en el rinc�n m�s pequeño de este mundo hace sonar su nombre, comenz� siendo un hobbie de dos amigos en un garaje.&lt;/p&gt;&#xA;&lt;p&gt;As�, cabe preguntarse por las diferentes estrategias que existen para ampliar el eco de una empresa en el �mbito nacional o internacional y cu�l es m�s conveniente para cada tipo de negocio.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -10,36 +10,30 @@
     <meta name="description" content="{{.Params.metaDesc}}">
 {{end}}
 <script type="application/ld+json">
-    @context: "https://schema.org" ,
-    @type: "BreadcrumbList", 
-    "itemListElement": [    
-    {{$index:=1}}
-    {{- range .Ancestors.Reverse }}
-        {
-            @type: "listItem"
-            "item": {
-                @type: "CollectionPage"
-                @id: {{.Permalink}}
-                "name": {{.Title}}
-            }
-            "position": {{$index}}
-        }
-        {{$index = add $index 1}}
-    {{- end }}
     {
-        @type: "listItem"
-        "item": {
-            @type: "CollectionPage"
-            @id: {{.Permalink}}
-            "name": {{.Title}}
-        }
-        "position": {{$index}}
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {{- $index := 1 }}
+        {{- range $i, $item := .Ancestors.Reverse }}
+          {{- if gt $i 0 }},{{ end }}
+          {
+            "@type": "ListItem",
+            "position": {{ $index }},
+            "item": {
+              "@type": "CollectionPage",
+              "@id": "{{ $item.Permalink | safeJS }}",
+              "name": "{{ $item.Title | safeJS }}"
+            }
+          }
+          {{- $index = add $index 1 }}
+        {{- end }}
+      ]
     }
-    ]
-</script>
+</script>    
 <script type="application/ld+json">
-    @context: "https://schema.org" ,
-    @type: "Article", 
+    "@context": "https://schema.org" ,
+    "@type": "Article", 
     "headline": {{.Title}}
     "image": {{printf "%s%s" .Permalink .Params.Img}}
     "keywords": {{.Params.keywords}}

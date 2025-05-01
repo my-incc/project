@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on incresium</title>
-    <link>/categories/</link>
+    <link>http://localhost:1313/my-incc/categories/</link>
     <description>Recent content in Categories on incresium</description>
     <generator>Hugo</generator>
     <language>es-ES</language>
     <lastBuildDate>Sat, 19 Apr 2025 21:16:29 +0200</lastBuildDate>
-    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/my-incc/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Expansión De Negocios</title>
-      <link>/categories/expansi%C3%B3n-de-negocios/</link>
+      <link>http://localhost:1313/my-incc/categories/expansi%C3%B3n-de-negocios/</link>
       <pubDate>Sat, 19 Apr 2025 21:16:29 +0200</pubDate>
-      <guid>/categories/expansi%C3%B3n-de-negocios/</guid>
+      <guid>http://localhost:1313/my-incc/categories/expansi%C3%B3n-de-negocios/</guid>
       <description></description>
     </item>
     <item>
       <title>Bancos</title>
-      <link>/categories/bancos/</link>
+      <link>http://localhost:1313/my-incc/categories/bancos/</link>
       <pubDate>Mon, 31 Mar 2025 21:15:27 +0200</pubDate>
-      <guid>/categories/bancos/</guid>
+      <guid>http://localhost:1313/my-incc/categories/bancos/</guid>
       <description></description>
     </item>
   </channel>
