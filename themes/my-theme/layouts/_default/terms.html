@@ -1,0 +1,30 @@
+{{ define "main" }}
+<h5 class="section__title">{{.Title}}</h5>
+{{$tags:=.Site.Taxonomies.tags}}
+{{range $k,$v := .Site.Taxonomies.categories}}
+    {{if gt (len $v) 0}}
+        <div class="section__header">
+            <h5 class="section__title">{{$k}}</h5>
+            <a href="{{.Page.Permalink}}" class="section__button tags__button">
+                Ver esta categoría »
+            </a>
+        </div>  
+        <div class="section__content">      
+        {{range $v}}
+        <a class="article" href="{{.RelPermalink}}">
+            <h2 class="article__title">{{.Title}}</h2>
+            {{$img := .Params.img}}
+            {{$concat :=print .Permalink $img}}
+            <!-- <img class="article__img" src="{{with .Resources.GetMatch $img}}{{end}}" alt="{{.Params.ImgDescription}}"> -->
+            <img class="article__img" src="{{$concat}}" alt="{{.Params.ImgDescription}}">
+            {{- if ne .Params.description "Resumen no disponible"}}
+            <p class="article__description">
+                {{.Params.description}}
+            </p>
+            {{end}}
+        </a>
+        {{end}}
+    </div>
+    {{end}}
+{{end}}
+{{end}}

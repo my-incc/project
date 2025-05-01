@@ -1,0 +1,20 @@
+{{- $particularcss:= dict "constfile" "main.css"}}
+
+{{- if .IsPage }}
+    {{- $particularcss = merge $particularcss (dict "cssfile" "article.css") }}
+{{- else if .IsHome }}
+    {{- $particularcss = merge $particularcss (dict "cssfile" "home.css") }}
+{{- else }}
+    {{- $particularcss = merge $particularcss (dict "cssfile" "list.css") }}
+{{ end }}
+
+
+
+
+{{ range $particularcss }}
+    {{ with resources.Get (printf "css/%s" .) }}
+      {{- with . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{- end }}
+    {{ end }}
+{{ end }}

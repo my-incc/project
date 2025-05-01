@@ -1,0 +1,25 @@
+{{$path:=.Get "path"}}
+{{$a:= (.Get "folder")}}
+{{$pro:= slice 600 850 1000}}
+<!-- {{page.Resources.Match $a}} -->
+
+<picture class="large--picture">
+    <!-- {{range page.Resources.Match $a}}
+        {{$splt:= split . "-"}}
+        <source srcset="{{.}}" media="(max-width: {{(index $splt 1)}}px)">
+    {{end}} -->
+
+    {{range $pro}}
+        {{$b:= print $a "-" . "*"}}
+        {{$pg:= page.Resources.GetMatch $b}}
+        <!-- {{print $pg}} -->
+        {{$bool:=eq $pg nil}}
+        <!-- {{print $bool}} -->
+        {{if not $bool}}
+            <source srcset="{{$pg}}" media="(max-width: {{.}}px)">
+        {{end}}
+    {{end}}
+
+    {{$c := print $a $path}}
+    <img class="large--img" src="{{ $c | safeURL }}" alt="{{.Get "desc"}}">
+</picture>

@@ -1,0 +1,25 @@
+{{ define "main" }}
+  <section class="section">
+    <!-- {{- if eq .Kind "term"}}
+    <a class="return__to__tags" href="/tags"> «Volver a tags</a>
+    {{ end }} -->
+    <div class="section__header">
+      <h1 class="section__title">{{.Title}}</h1>
+    </div>
+  {{ .Content }}
+    <div class="section__content">
+      {{ range .Pages }}
+      <a class="article" href="{{.RelPermalink}}">
+        <h2 class="article__title">{{.Title}}</h2>
+        {{$img := .Params.img}}
+        {{$concat :=print .Permalink $img}}
+        <!-- <img class="article__img" src="{{with .Resources.GetMatch $img}}{{end}}" alt="{{.Params.ImgDescription}}"> -->
+        <img class="article__img" src="{{$concat}}" alt="{{.Params.ImgDescription}}">
+        <p class="article__description">
+            {{.Params.description}}
+        </p>
+      </a>
+    {{ end }}
+    </div>
+  </section>
+{{ end }}

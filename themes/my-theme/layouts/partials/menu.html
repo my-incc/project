@@ -1,0 +1,75 @@
+{{- /*
+Renders a menu for the given menu ID.
+
+@context {page} page The current page.
+@context {string} menuID The menu ID.
+
+@example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+*/}}
+
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+{{/* El siguiente bloque recorre con index todos los menus que tienen el id = menuID */}}
+
+{{- if $page.IsPage}}
+  <nav class="navbar">
+    <ul class="nav__list">
+      {{range $page.Params.tags}}
+          <li class="nav__item nav__item--mod">
+            {{$tagname:= .}}
+            {{$finalURL:= printf $tagname}}
+            <a class="nav__link nav__link--mod" href="\tags\{{$finalURL}}">{{title .}}</a>
+          </li>
+        {{end}}
+        <li class="nav__item nav__item--tags">
+          <a class="nav__link nav__link--mod" href="\tags">Ver más tags</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--nmod" href="\articulos">Todos los artículos</a>
+        </li>
+    </ul>
+  </nav>
+{{else}}
+
+  {{- with index site.Menus $menuID }}
+    <nav class="navbar">
+      <ul class="nav__list">
+        {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        <li class="nav__item">
+          <a class="nav__link nav__link--nmod" href="\articulos">Todos los artículos</a>
+        </li>
+      </ul>
+    </nav>
+  {{- end }}
+{{end}}
+
+
+
+{{- define "partials/inline/menu/walk.html" }}
+  {{- $page := .page }}
+  {{- range .menuEntries }}
+    {{- $attrs := dict "href" .PageRef }}
+    {{- if $page.IsMenuCurrent .Menu . }}
+      {{- $attrs = merge $attrs (dict "class" "nav__link nav__link--nmod" "aria-current" "page") }}
+    {{- else if $page.HasMenuCurrent .Menu .}}
+      {{- $attrs = merge $attrs (dict "class" "nav__link nav__link--nmod" "aria-current" "true") }}
+    {{- else}}
+      {{- $attrs = merge $attrs (dict "class" "nav__link nav__link--nmod" "aria-current" "true") }}
+    {{- end }}
+    {{- $name := .Name }}
+    {{- with .Identifier }}
+      {{- with T . }}
+        {{- $name = . }}
+      {{- end }}
+    {{- end }}
+    <li class="nav__item">
+      <a
+        {{- range $k, $v := $attrs }}
+          {{- with $v }}
+            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+          {{- end }}
+        {{- end -}}
+      >{{ $name }}</a>
+    </li>
+  {{- end }}
+{{- end }}

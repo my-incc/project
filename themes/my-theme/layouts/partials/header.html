@@ -1,0 +1,13 @@
+
+
+
+<div class="header__start">
+    <button class="header__button" aria-label="Menu button"></button>
+    <a class="logo" href="/">
+    <img class="logo__img" src="/header/logo.png" alt="logo" title="section">
+    <h2 class="logo__name">
+        {{ site.Title }}
+    </h2>
+    </a> 
+</div>
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}

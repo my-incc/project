@@ -1,0 +1,212 @@
+{{ define "main"}}
+    <section class="section" id="recent">
+        <div class="section__header">
+            <h5 class="section__title">Reciente</h5>
+            <button class="section__button">
+                Ver más »
+            </button>
+        </div>
+        <div class="section__content">
+
+            {{range where .Site.Pages "Type" "post"}}
+                {{if eq .RelPermalink "/art%C3%ADculos/"}}
+                    {{continue}}
+                {{end}}
+                <article class="article">
+                    <!-- <a class="article" href="{{.RelPermalink}}"> -->
+                        <a href="{{.RelPermalink}}">
+                            {{$img := .Params.img}}
+                            {{$concat :=print .Permalink $img}}
+                            <!-- <img class="article__img" src="{{with .Resources.GetMatch $img}}{{end}}" alt="{{.Params.ImgDescription}}"> -->
+                            <img class="article__img" src="{{$concat}}" alt="{{.Params.ImgDescription}}">
+                        </a>
+                        <h2 class="article__title">
+                            <a href="{{.RelPermalink}}">{{.Title}}</a>
+                        </h2>
+                        <a class="article__description--container">
+                            {{- if ne .Params.description "Resumen no disponible"}}
+                            <p class="article__description">
+                                {{.Params.description}}
+                            </p>
+                            {{end}}
+                        </a>
+                    <!-- </a> -->
+                </article>
+            {{end}}
+            <!-- <a class="article" href="#main">
+                    <h2 class="article__title">No creerás la nota que he sacado en álgebra básica.</h2>
+                    <img class="article__img" src="files/OIP.jpg" alt="">
+                    <p class="article__description">
+                        "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra. "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra.
+                    </p>
+            </a>
+            <a class="article" href="#main">
+                <h2 class="article__title">No creerás la nota que he sacado en álgebra básica. Digno de admirar. Un chico que comenzó con ambición y acabó con todo</h2>
+                <img class="article__img" src="files/R.jpeg" alt="">
+                <p class="article__description">
+                    "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra. "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra.
+                </p>
+            </a>
+            <a class="article" href="#main">
+                <h2 class="article__title">No creerás la nota que he sacado en álgebra básica.</h2>
+                <img class="article__img" src="files/R.jpeg" alt="">
+                <p class="article__description">
+                    "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra. "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra.
+                </p>
+            </a>
+            <a class="article" href="#main">
+                <h2 class="article__title">No creerás la nota que he sacado en álgebra básica.</h2>
+                <img class="article__img" src="files/R.jpeg" alt="">
+                <p class="article__description">
+                    "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra. "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra.
+                </p>
+            </a>
+            <a class="article" href="#main">
+                <h2 class="article__title">No creerás la nota que he sacado en álgebra básica.</h2>
+                <img class="article__img" src="files/R.jpeg" alt="">
+                <p class="article__description">
+                    "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra. "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra.
+                </p>
+            </a>
+            <a class="article" href="#main">
+                <h2 class="article__title">No creerás la nota que he sacado en álgebra básica.</h2>
+                <img class="article__img" src="files/R.jpeg" alt="">
+                <p class="article__description">
+                    "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra. "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra.
+                </p>
+            </a>
+            <a class="article" href="#main">
+                <h2 class="article__title">No creerás la nota que he sacado en álgebra básica.</h2>
+                <img class="article__img" src="files/R.jpeg" alt="">
+                <p class="article__description">
+                    "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra. "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra.
+                </p>
+            </a>
+            <a class="article" href="#main">
+                <h2 class="article__title">No creerás la nota que he sacado en álgebra básica.</h2>
+                <img class="article__img" src="files/R.jpeg" alt="">
+                <p class="article__description">
+                    "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra. "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra.
+                </p>
+            </a> -->
+        </div>
+    </section>
+    <section class="section" id="trending">
+        <div class="section__header" id="t">
+            <h5 class="section__title">Trending</h5>
+            <button class="section__button">
+                Ver más »
+            </button>
+        </div>
+        <div class="section__content">
+            {{range where .Site.Pages "Type" "post"}}
+            {{if eq .RelPermalink "/art%C3%ADculos/"}}
+                {{continue}}
+            {{end}}
+            <article class="article">
+                <!-- <a class="article" href="{{.RelPermalink}}"> -->
+                    <a href="{{.RelPermalink}}">
+                        {{$img := .Params.img}}
+                        {{$concat :=print .Permalink $img}}
+                        <!-- <img class="article__img" src="{{with .Resources.GetMatch $img}}{{end}}" alt="{{.Params.ImgDescription}}"> -->
+                        <img class="article__img" src="{{$concat}}" alt="{{.Params.ImgDescription}}">
+                    </a>
+                    <h2 class="article__title">
+                        <a href="{{.RelPermalink}}">{{.Title}}</a>
+                    </h2>
+                    <a class="article__description--container">
+                        {{- if ne .Params.description "Resumen no disponible"}}
+                        <p class="article__description">
+                            {{.Params.description}}
+                        </p>
+                        {{end}}
+                    </a>
+                <!-- </a> -->
+            </article>
+        {{end}}
+            <!-- <a class="article" href="#main">
+                <h2 class="article__title">No creerás la nota que he sacado en álgebra básica. Digno de admirar. Un chico que comenzó con ambición y acabó con todo</h2>
+                <img class="article__img" src="files/R.jpeg" alt="">
+                <p class="article__description">
+                    "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra. "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra.
+                </p>
+            </a>
+            <a class="article" href="#main">
+                <h2 class="article__title">No creerás la nota que he sacado en álgebra básica.</h2>
+                <img class="article__img" src="files/R.jpeg" alt="">
+                <p class="article__description">
+                    "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra. "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra.
+                </p>
+            </a>
+            <a class="article" href="#main">
+                <h2 class="article__title">No creerás la nota que he sacado en álgebra básica. Digno de admirar. Un chico que comenzó con ambición y acabó con todo</h2>
+                <img class="article__img" src="files/R.jpeg" alt="">
+                <p class="article__description">
+                    "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra. "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra.
+                </p>
+            </a>
+            <a class="article" href="#main">
+                <h2 class="article__title">No creerás la nota que he sacado en álgebra básica. Digno de admirar. Un chico que comenzó con ambición y acabó con todo</h2>
+                <img class="article__img" src="files/R.jpeg" alt="">
+                <p class="article__description">
+                    "El examen era para verlo", dijo un estudiante. La profesora en realidad era una cabra.
+                </p>
+            </a>
+            <a class="article" href="#main">
+                <h2 class="article__title">No creerás la nota que he sacado en álgebra básica. Un chico que comenzó con ambición.</h2>
+                <img class="article__img" src="files/R.jpeg" alt="">
+                <p class="article__description">
+                    "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra. "El examen era para verlo", dijo un estudiante. La verdad que tenía razón, porque la profesora en realidad era una cabra.
+                </p>
+            </a> -->
+        </div>
+    </section>
+
+    <section class="section" id="tags">
+        <div class="section__header">
+            <div class="section__header--tags">
+                <h5 class="section__title">Artículos de:</h5>
+                <a class="tags__link" href="#">
+                    <h5 class="section__title--tags"></h5>
+                </a>
+            </div>
+            <a href="/tags" class="section__button tags__button">
+                Ver todos los tags »
+            </a>
+        </div>
+            {{ $pages:= where .Site.Pages "Type" "post"}}
+            <div class="section__content--tags">
+            {{ range $k, $v :=.Site.Taxonomies.tags}}
+                    <div class="section__content--inside-tags {{add "tag-" $k}}">
+                        {{range first 3 $v}}
+                            <article class="article--tags" href="{{.RelPermalink}}">
+                                <h2 class="article__title">
+                                    <a href="{{.RelPermalink}}">
+                                        {{.Title}}
+                                    </a>
+                                </h2>
+                                {{$img := .Params.img}}
+                                {{$concat :=print .Permalink $img}}
+                                <!-- <img class="article__img" src="{{with .Resources.GetMatch $img}}{{end}}" alt="{{.Params.ImgDescription}}"> -->
+                                 <a href="{{.RelPermalink}}">
+                                    <img class="article__img article__img--tags" src="{{$concat}}" alt="{{.Params.ImgDescription}}">
+                                 </a>
+                                {{- if ne .Params.description "Resumen no disponible"}}
+                                <a class="article__description--container">
+                                    {{- if ne .Params.description "Resumen no disponible"}}
+                                    <p class="article__description">
+                                        {{.Params.description}}
+                                    </p>
+                                    {{end}}
+                                </a>
+                                {{end}}
+                            </article>
+                        {{end}}
+                    </div>
+
+
+            {{end}}
+            </div>
+    </section>
+
+{{end}}

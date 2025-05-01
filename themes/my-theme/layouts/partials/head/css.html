@@ -1,0 +1,41 @@
+{{$context:= . }}
+
+{{- with resources.Get "css/main.css" }}
+  {{- if eq hugo.Environment "development" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+
+
+    {{- if $context.IsHome}}
+      {{- with resources.Get "css/home.css"}}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+      {{end}}
+    {{- else if $context.IsPage}}
+      {{- with resources.Get "css/article.css"}}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+      {{end}}
+    {{- else}}
+      {{- with resources.Get "css/list.css"}}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+      {{end}}
+
+    {{end}}
+{{- else }}
+  {{- with . | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{/*single*/}}
+
+{{ define "main" }}
+  <h1></h1>
+
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateHuman := .Date | time.Format ":date_long" }}
+  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+
+  {{ .Content }}
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}
+

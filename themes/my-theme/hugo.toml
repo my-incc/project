@@ -1,0 +1,46 @@
+baseURL = 'https://my-incc.github.io/my-incc/'
+languageCode = 'en-US'
+title = 'My New Hugo Site'
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      hardWraps = false
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.parser]
+      wrapStandAloneImage = false
+[[menus.main]]
+name = 'Reciente'
+pageRef = '/#recent'
+weight = 20
+
+[[menus.main]]
+name = 'Trending'
+pageRef = '/#trending'
+weight = 30
+
+[[menus.main]]
+name = 'Ver por tags'
+pageRef = '/#tags'
+weight = 40
+
+[taxonomies]
+tag = "tags"
+
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+
+[minify]
+  disableCSS = true
+  disableJS = true
+
+canonifyURLs = true
+relativeURLs = false

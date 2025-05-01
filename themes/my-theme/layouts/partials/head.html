@@ -1,0 +1,46 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon" href="{{"favicon.ico" | relURL}}" type="img/png">
+<title>{{ if .IsHome}}{{title site.Title}}{{ else }}{{ printf "%s | %s" .Title (title site.Title) }}{{ end }}</title>
+{{ partial "head/ciss.html" . }}
+{{ partial "head/js.html" . }}
+{{if .IsHome}}
+    <meta name="description" content="Blog de artículos, fundamentalmente de economía, para crecimiento profesional.">
+{{else}}
+    <meta name="description" content="{{.Params.metaDesc}}">
+{{end}}
+<script type="application/ld+json">
+    @context: "https://schema.org" ,
+    @type: "BreadcrumbList", 
+    "itemListElement": [    
+    {{$index:=1}}
+    {{- range .Ancestors.Reverse }}
+        {
+            @type: "listItem"
+            "item": {
+                @type: "CollectionPage"
+                @id: {{.Permalink}}
+                "name": {{.Title}}
+            }
+            "position": {{$index}}
+        }
+        {{$index = add $index 1}}
+    {{- end }}
+    {
+        @type: "listItem"
+        "item": {
+            @type: "CollectionPage"
+            @id: {{.Permalink}}
+            "name": {{.Title}}
+        }
+        "position": {{$index}}
+    }
+    ]
+</script>
+<script type="application/ld+json">
+    @context: "https://schema.org" ,
+    @type: "Article", 
+    "headline": {{.Title}}
+    "image": {{printf "%s%s" .Permalink .Params.Img}}
+    "keywords": {{.Params.keywords}}
+</script>

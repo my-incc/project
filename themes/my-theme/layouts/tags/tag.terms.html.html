@@ -1,0 +1,36 @@
+{{ define "main" }}
+<h5 class="section__title">{{.Title}}</h5>
+  {{ range .Pages.ByTitle}}
+  {{$tag:= .Title}}
+  {{$link:=.RelPermalink}}
+  <section class="section">
+    <div class="section__header">
+        <h5 class="section__title">{{$tag}}</h5>
+        <a href="{{$link}}" class="section__button tags__button">
+            Ver este tag »
+        </a>
+    </div>
+    <div class="section__content">
+    {{range .Data.Pages}}
+        <!-- {{printf "%s %s" ((index .Params.Tags 0)) (lower $tag)}} -->
+            <a class="article" href="{{.RelPermalink}}">
+                <h2 class="article__title">{{.Title}}</h2>
+                {{$img := .Params.img}}
+                {{$concat :=print .Permalink $img}}
+                <!-- <img class="article__img" src="{{with .Resources.GetMatch $img}}{{end}}" alt="{{.Params.ImgDescription}}"> -->
+                <img class="article__img" src="{{$concat}}" alt="{{.Params.ImgDescription}}">
+                {{- if ne .Params.description "Resumen no disponible"}}
+                <p class="article__description">
+                    {{.Params.description}}
+                </p>
+                {{end}}
+            </a>
+    {{end}}
+    </div>
+</section>
+{{end}}
+{{end}}
+
+
+
+

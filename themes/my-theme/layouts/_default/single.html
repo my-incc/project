@@ -1,0 +1,110 @@
+{{ define "main" }}
+{{$currentPage:=.}}
+{{$currentTags:=.Params.tags}}
+
+
+
+
+<div class="heading" id="heading">
+    <h1 class="heading__title">{{ .Title }}</h1>
+    <ul class="heading__list">
+        {{range .Params.subtitles}}
+        <li class="heading__item"><h2 class="heading__subtitle">{{.}}</h2></li>
+        {{end}}
+    </ul>
+    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+    {{ $dateHuman := .Date | time.Format ":date_long" }}
+    <time class="time" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    {{- if .Params.img}}
+    <!-- <img src={{.Params.img}} alt="{{.Params.ImgDescription}}" class="heading__img"> -->
+    {{$pro:= slice 600 850 1000}}
+
+    <picture>
+        {{range $pro}}
+            {{$b:= print "main__img/" "-" . "*"}}
+            {{$pg:= page.Resources.GetMatch $b}}
+            {{$bool:=eq $pg nil}}
+            {{if not $bool}}
+                <source srcset="{{$pg}}" media="(max-width: {{.}}px)">
+            {{end}}
+        {{end}}
+        <img src="{{.Params.img}}" alt="{{.Params.ImgDescription}}" class="heading__img">
+    </picture>
+    {{ end }}
+    <div class="wave--container"></div>
+</div>
+
+<div class="content">
+    <aside class="aside"> 
+        <h3 class="aside__title">
+            Tabla de contenidos
+        </h3>
+        {{.TableOfContents}}  
+    </aside>
+    <main class="main__section">
+        {{ .Content }}
+    </main>
+    <aside class="aside citation_aside">
+        <h3 class="aside__title">
+            Cita este artículo
+        </h3>
+        <div class="aside__content">
+            <p onclick="copyText(this)">
+                <span class="citation__title">
+                    Online: 
+                </span>
+                {{.Params.Author}}. ({{$dateHuman}}). {{.Title}}. <i>Incresium</i>. Recuperado desde: {{.Permalink}}
+            </p>
+            <p onclick="copyText(this)">
+                <span class="citation__title">
+                    Impreso: 
+                </span>
+                {{.Params.Author}}. ({{$dateHuman}}). {{.Title}}. <i>Incresium</i>.
+            </p>
+        </div>
+    </aside>
+    <aside class="aside related__aside">
+            <h3 class="aside__title">
+                Contenido relacionado
+            </h3>
+            <div class="aside__content">
+                {{$count:= 0}}
+                {{range .Site.RegularPages}}
+                        {{$intersection:=intersect .Params.tags $currentTags}}
+                        {{if eq $count 2}}
+                            {{break}}
+                        {{end}}
+                        {{if  and (not (eq (len $intersection) 0)) (not (eq . $currentPage))}}
+                            {{$count = add $count 1}}
+                            <article class="article--tags" href="{{.RelPermalink}}">
+                                <h2 class="article__title">
+                                    <a href="{{.RelPermalink}}">
+                                        {{.Title}}
+                                    </a>
+                                </h2>
+                                {{$img := .Params.img}}
+                                {{$concat :=print .Permalink $img}}
+                                <!-- <img class="article__img" src="{{with .Resources.GetMatch $img}}{{end}}" alt="{{.Params.ImgDescription}}"> -->
+                                 <a href="{{.RelPermalink}}">
+                                    <img class="article__img" src="{{$concat}}" alt="{{.Params.ImgDescription}}">
+                                 </a>
+                                {{- if ne .Params.description "Resumen no disponible"}}
+                                <a class="article__description--container">
+                                    {{- if ne .Params.description "Resumen no disponible"}}
+                                    <p class="article__description">
+                                        {{.Params.description}}
+                                    </p>
+                                    {{end}}
+                                </a>
+                                {{end}}
+                            </article>
+                        {{$newTags:=.Params.tags}}
+                        {{end}}
+                    {{end}}
+                    {{if eq $count 0}} 
+                        <p>No hay contenido relacionado</p>
+                    {{end}}
+            </div>
+    </aside>
+</div>
+{{ end }}

@@ -1,0 +1,19 @@
+baseURL = 'https://my-incc.github.io/my-incc/'
+languageCode = 'es-ES'
+title = 'incresium'
+theme = 'my-theme'
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = true
+
+defaultContentLanguage = "es"
+relativeURLs = false
+canonifyURLs = true
+
+[minify]
+  disableCSS = true
+  disableJS = true
+

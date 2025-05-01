@@ -1,0 +1,21 @@
+{{if not .IsHome}}
+<nav class="breadcrumbs__nav" aria-label="breadcrumbs">
+    <ol class="breadcrumbs__list">
+      {{- range .Ancestors.Reverse }}
+          <!-- {{$antecesor := .}}
+          {{printf "ABCD %s" $antecesor}} -->
+      <li class="">
+          {{- if eq .RelPermalink "/"}}
+          <a href="{{ .RelPermalink }}">Home</a>
+          {{else}}
+          <a href="{{ .RelPermalink }}">{{.Title}}</a>
+          {{end}}
+      </li>
+      <span class="" aria-hidden="true">»</span>
+      {{- end }}
+      <li class="active">
+        <a href="{{ .RelPermalink }}" aria-current="location">{{ .Title }}</a>
+      </li>
+    </ol>
+  </nav>
+{{end}}

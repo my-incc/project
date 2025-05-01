@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+{{- if .IsHome}}
+<body class="body body--index" id="body">
+{{- else if .IsPage}}
+<body class="body body--post" id="body">
+{{- else}}
+<body class="body body--tags" id="body">
+{{- end}}
+  {{- if .IsHome}}
+    <section class="landing" id="landing">
+    <div class="landing__info">
+        <h1 class="h1"><span class="info__brand">{{.Site.Title}}</span>: artículos para crecimiento personal y profesional.</h1>
+        <a class="info__link" href="#header">Ir a artículos</a>
+    </div>
+
+
+    <div class="info__box box-1">
+        <div class="box__title-container">
+            <img class="box__img" src="/index/landing/cohete.webp" alt="cohete">
+            <h2 class="box__title">Aumenta tu conocimiento.</h2>
+        </div>
+        <p class="box__text">Con artículos, sobre todo de finanzas, llevarás tu aprendizaje a un nivel superior.</p>
+    </div>
+    <div class="info__box box-2">
+        <div class="box__title-container">
+            <img class="box__img" src="/index/landing/diana.webp" alt="cohete">
+            <h2 class="box__title">Hecho para ti.</h2>
+        </div>
+        <p class="box__text">Si buscas aprender de la economía y el emprendimiento</p>
+    </div>
+    <div class="info__box box-3">
+        <div class="box__title-container">
+            <img class="box__img" src="/index/landing/hoja.webp" alt="cohete">
+            <h2 class="box__title">Simplifica lo complejo.</h2>
+        </div>
+        <p class="box__text">El contenido está escrito en un lenguaje claro y directo pero entendible.</p>
+    </div>
+    <div class="filler">
+
+    </div>
+
+    <!-- <div class="wave--container"></div> -->
+    </section>
+  {{ end }}
+  <header class="header" id="header">
+    {{ partial "header.html" . }}
+  </header>
+  {{partial "breadcrumbs.html" .}}
+  <main class="main" id="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer class="footer" id="footer">
+    {{ partial "footer.html" . }}
+  </footer>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="982px" height="178px" viewBox="-0.5 -0.5 982 178" content="&lt;mxfile&gt;&lt;diagram name=&quot;Página-1&quot; id=&quot;G0OfxVwwow_52MhTjmzT&quot;&gt;7ZhNc9owEIZ/jWfaAzPGBhOOYPLRQ2Y6ZSY9L5IwamXJkeRA8uu7suXwYUgDhySk5QDiXWm1K0vPahzEab661lAsbhVlIohCugriSRBF3SRO8Mcpj14Je71ayTSnXlsLU/7Emo5eLTllZqujVUpYXmyLREnJiN3SQGu13O42V2J71gIy1hKmBERb/cmpXdTqRTRY6zeMZ4tm5m4yrC05NJ19JmYBVC03pPgyiFOtlK1b+Splwq1esy71uKsD1ufANJP2NQPiVSed3XRWk9u7p3KiRmHau+tEtZcHEKVPOIgSgf7GlD9gM3PNRpornGlHm7UEvatgSK1eqO3zhvKx805LUmoD4oTZ9kxVuhUz9tE//uS+dI9nXAClXGYdXT/pEa47bvGxZSvbAcEziZpgc+/JD9r1LfhRiX2TlBUMvyThgP4D93zbOYKw8PdVbc99ZDTfmTZKYq4UKEbyq9RBGgejCeUE3DbUqngpSqneIMYfLCsFEO4iG8fycDTChZxzk7vfe9z5UVhJBAzUR1fzpzcIOK0jzXFxQo0PW5PScjw/IZNuG5bGkZMRbriSDoKH8jFKOBeWM+lyqRiMQLRaiSY1wyg7JSMU3Zl4+ZhGW4cm0qrEbeuw00XzcsEtmxZAnHWJZQK1hc2FN8+5ECnGr6uxMevSPhu4nDD632zDMkwGMSRux2vi68TQL/AV5Fy4CpOqfK60BfCGjeFh9XkOd5ObHqUPTOOB3pA8R6+ZypnVj9jFW3se6b6oJf7vcl0g4ob6i83i0IwDX5SyZ89rbmPDo/sIjMdnj/ErLvhJEG8H+imwPjoLrJu694dje30NLaAOr8Kokg6AyEH3xW3lZ3QSEt8J8kE07qOhX8PLcsKRqfWYM+D6fM4SQvZxnQ6GswrM78/1QfjRwN47e7BPy5nhlIPmcMKEn5TuOaP8P97/VbwnkDtYypkpDhxDoTINzgmQkmmqTH2hd5f5qm0Ukt81vkilcxA5Mo9VffJCg6SqXSS+nkOVwLv/Be3tqxIX0SxOPsbtPx5sV4le/5VVYnB8lcC/6zdElW3jRVt8+Qc=&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <g>
+            <rect x="0" y="19" width="320" height="140" rx="12.6" ry="12.6" fill="#e1d5e7" stroke="#9673a6" pointer-events="all" style="fill: light-dark(rgb(225, 213, 231), rgb(57, 47, 63)); stroke: light-dark(rgb(150, 115, 166), rgb(149, 119, 163));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 318px; height: 1px; padding-top: 89px; margin-left: 1px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Comfortaa&quot;; color: light-dark(#000000, #ededed); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <div>
+                                        <font>
+                                            <b>
+                                                <br/>
+                                            </b>
+                                        </font>
+                                    </div>
+                                    <font>
+                                        <b>
+                                            Sucursal
+                                        </b>
+                                    </font>
+                                    <div>
+                                        <ul style="padding-right:20px;text-align:left;">
+                                            <li>
+                                                <font>
+                                                    <b>
+                                                        Independencia:
+                                                    </b>
+                                                    alta
+                                                </font>
+                                            </li>
+                                            <li>
+                                                <font>
+                                                    <b>
+                                                        Personalidad jurídica propia:
+                                                    </b>
+                                                    no
+                                                </font>
+                                            </li>
+                                            <li>
+                                                <font>
+                                                    <b>
+                                                        Regulación:
+                                                    </b>
+                                                    la misma que la casa matriz
+                                                </font>
+                                            </li>
+                                            <li>
+                                                <font>
+                                                    <b>
+                                                        Cómo repercutir en sus decisiones:
+                                                    </b>
+                                                    solo tiene el control la sede
+                                                </font>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="160" y="93" fill="#000000" font-family="&quot;Comfortaa&quot;" font-size="12px" text-anchor="middle">
+                        Sucursal...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="660" y="19" width="320" height="140" rx="12.6" ry="12.6" fill="#ffe6cc" stroke="#d79b00" pointer-events="all" style="fill: light-dark(rgb(255, 230, 204), rgb(54, 33, 10)); stroke: light-dark(rgb(215, 155, 0), rgb(153, 101, 0));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 318px; height: 1px; padding-top: 89px; margin-left: 661px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Comfortaa&quot;; color: light-dark(#000000, #ededed); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <div>
+                                        <font>
+                                            <b>
+                                                <br/>
+                                            </b>
+                                        </font>
+                                    </div>
+                                    <font>
+                                        <b>
+                                            Filial
+                                        </b>
+                                    </font>
+                                    <br/>
+                                    <div>
+                                        <ul style="padding-right:20px;text-align:left;">
+                                            <li>
+                                                <font>
+                                                    <b>
+                                                        Independencia:
+                                                    </b>
+                                                    Alta
+                                                </font>
+                                            </li>
+                                            <li>
+                                                <font>
+                                                    <b>
+                                                        Personalidad jurídica propia:
+                                                    </b>
+                                                    sí
+                                                </font>
+                                            </li>
+                                            <li>
+                                                <font>
+                                                    <b>
+                                                        Regulación:
+                                                    </b>
+                                                    la del país donde se sitúe
+                                                </font>
+                                            </li>
+                                            <li>
+                                                <font>
+                                                    <b>
+                                                        Cómo repercutir en sus decisiones:
+                                                    </b>
+                                                    +50% participaciones
+                                                </font>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="820" y="93" fill="#000000" font-family="&quot;Comfortaa&quot;" font-size="12px" text-anchor="middle">
+                        Filial...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="330" y="4" width="320" height="170" rx="15.3" ry="15.3" fill="#d5e8d4" stroke="#82b366" pointer-events="all" style="fill: light-dark(rgb(213, 232, 212), rgb(31, 47, 30)); stroke: light-dark(rgb(130, 179, 102), rgb(68, 110, 44));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 318px; height: 1px; padding-top: 89px; margin-left: 331px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Comfortaa&quot;; color: light-dark(#000000, #ededed); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <div>
+                                        <font>
+                                            <b>
+                                                <br/>
+                                            </b>
+                                        </font>
+                                    </div>
+                                    <font>
+                                        <b>
+                                            Subsidiaria
+                                        </b>
+                                    </font>
+                                    <br/>
+                                    <div>
+                                        <ul style="padding-right:20px;text-align:left;">
+                                            <li>
+                                                <font>
+                                                    <b>
+                                                        Independencia:
+                                                    </b>
+                                                    media
+                                                </font>
+                                            </li>
+                                            <li>
+                                                <font>
+                                                    <b>
+                                                        Personalidad jurídica propia:
+                                                    </b>
+                                                    sí
+                                                </font>
+                                            </li>
+                                            <li>
+                                                <font>
+                                                    <b>
+                                                        Regulación:
+                                                    </b>
+                                                    la del país donde se sitúe
+                                                </font>
+                                            </li>
+                                            <li>
+                                                <font>
+                                                    <b>
+                                                        Cómo repercutir en sus decisiones:
+                                                    </b>
+                                                    lograr acuerdos con los socios (normalmente comprando participaciones)
+                                                </font>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="490" y="93" fill="#000000" font-family="&quot;Comfortaa&quot;" font-size="12px" text-anchor="middle">
+                        Subsidiaria...
+                    </text>
+                </switch>
+            </g>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>
