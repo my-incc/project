@@ -32,9 +32,11 @@
     }
 </script>    
 <script type="application/ld+json">
-    "@context": "https://schema.org",
-    "@type": "Article", 
-    "headline": {{.Title}}
-    "image": {{printf "%s%s" .Permalink .Params.Img}}
-    "keywords": {{.Params.keywords}}
+{
+  "@context": "https://schema.org",
+  "@type": "Article", 
+  "headline": "{{ .Title | safeJS }}",
+  "image": "{{ printf "%s%s" .Permalink .Params.Img | safeJS }}",
+  "keywords": {{ .Params.keywords | jsonify }}
+}
 </script>
